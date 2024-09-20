@@ -1,223 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-            <section>
-                <div class="icon-container">
-                  <div class="icon-box about" data-modal="about">
-                    <i class="fa-regular fa-address-card"></i>
-                  </div>
-                  <div class="icon-box projects" data-modal="projects">
-                    <i class="fa-solid fa-laptop-code"></i>
-                  </div>
-                  <div class="icon-box testimonial" data-modal="socials">
-                    <i class="fa-solid fa-users-rectangle"></i>
-                  </div>
-                  <div class="icon-box contact" data-modal="contact">
-                    <i class="fa-solid fa-envelope"></i>
-                  </div>
-                </div>
-              </section>
-          
-              <div class="popup" id="about">
-                <div class="popup-container">
-                  <div class="popup-header">
-                    <div class="button-container">
-                      <button class="close-btn circle-btn red">
-                        <i class="fa-solid fa-xmark"></i>
-                      </button>
-                      <button class="close-btn circle-btn yellow">
-                        <i class="fa-solid fa-window-minimize"></i>
-                      </button>
-                      <button class="maximize-btn circle-btn green">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="popup-body about-container">
-                    <div class="img-frame">
-                      <img
-                        src="asessts/mypfp.png"
-                        alt="" />
-                    </div>
-                    <div class="hero-content">
-                      <h1>Omisha Singh</h1>
-                      <p>
-                        I am a B.Tech Computer Science student from PSIT, set to graduate in 2026. Over the course of my studies, I have honed skills in various technologies including HTML, CSS, JavaScript, Node.js, C++, Python, Figma, MySQL, and Git/GitHub. I am actively seeking a software engineering position where I can continue sharpening my skills, contribute to impactful projects, and grow alongside the company for mutual benefit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="popup" id="projects">
-                <div class="popup-container">
-                  <div class="popup-header">
-                    <div class="button-container">
-                      <button class="close-btn circle-btn red">
-                        <i class="fa-solid fa-xmark"></i>
-                      </button>
-                      <button class="close-btn circle-btn yellow">
-                        <i class="fa-solid fa-window-minimize"></i>
-                      </button>
-                      <button class="maximize-btn circle-btn green">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                      </button>
-                    </div>
-                  </div>
-          
-                  <div class="popup-body">
-                    <div class="skill-list">
-                      <h1>Skills</h1>
-                      <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>Node.js</li>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>MySQL</li>
-                        <li>Bootstrap</li>
-                        <li>Tailwind CSS</li>
-                        <li>Figma</li>
-                        <li>Git/Github</li>
-                      </ul>
-                    </div>
-          
-                    <div class="project-container">
-                      <h1>Projects</h1>
-                      <div class="all-projects">
-                        <div class="project-box">
-                          <img
-                            src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/0c183f3d-cc94-4ed9-afea-4d33740dbf40"
-                            alt="" />
-                          <div class="overlay">
-                            <h3>Adventure Landing Page</h3>
-                            <button class="more-btn">
-                              <span>Learn More</span>
-                            </button>
-                          </div>
-                        </div>
-          
-                        <div class="project-box">
-                          <img
-                            src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/08c8b66f-7e24-42d9-848d-23e30f7e1968"
-                            alt="" />
-                          <div class="overlay">
-                            <h3>Landing Page Template</h3>
-                            <button class="more-btn">
-                              <span>Learn More</span>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="popup" id="socials">
-                <div class="popup-container">
-                  <div class="popup-header">
-                    <div class="button-container">
-                      <button class="close-btn circle-btn red">
-                        <i class="fa-solid fa-xmark"></i>
-                      </button>
-                      <button class="close-btn circle-btn yellow">
-                        <i class="fa-solid fa-window-minimize"></i>
-                      </button>
-                      <button class="maximize-btn circle-btn green">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="popup-body testimonial-container socials-container">
-                    <h1>Socials</h1>
-                    <div class="socials">
-                        <div class="socials-item">
-                            <a href="" class="socials-item-icon socials-item-icon__linkedin" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                        <div class="socials-item">
-                            <a href="" class="socials-item-icon socials-item-icon__codepen" target="_blank">
-                                <i class="fab fa-codepen"></i>
-                            </a>
-                        </div>
-                        <div class="socials-item">
-                            <a href="" class="socials-item-icon socials-item-icon__github" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                        <div class="socials-item">
-                            <a href="" class="socials-item-icon socials-item-icon__instagram" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                </div></div>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main
+      style="justify-content: center; text-align: center; align-items: center"
+    >
+      <section>
+        <div class="icon-container">
+          <div class="icon-box about" data-modal="about">
+            <i class="fa-regular fa-address-card"></i>
+          </div>
+          <div class="icon-box projects" data-modal="projects">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="icon-box testimonial" data-modal="socials">
+            <i class="fa-solid fa-users-rectangle"></i>
+          </div>
+          <div class="icon-box contact" data-modal="contact">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+      </section>
 
-          
-              <div class="popup" id="contact">
-                <div class="popup-container">
-                  <div class="popup-header">
-                    <div class="button-container">
-                      <button class="close-btn circle-btn red">
-                        <i class="fa-solid fa-xmark"></i>
-                      </button>
-                      <button class="close-btn circle-btn yellow">
-                        <i class="fa-solid fa-window-minimize"></i>
-                      </button>
-                      <button class="maximize-btn circle-btn green">
-                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                      </button>
-                    </div>
+      <div class="popup" id="about">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-body about-container">
+            <div class="img-frame">
+              <img src="asessts/mypfp.png" alt="" />
+            </div>
+            <div class="hero-content">
+              <h1>Omisha Singh</h1>
+              <p>
+                I am a B.Tech Computer Science student from PSIT, set to
+                graduate in 2026. Over the course of my studies, I have honed
+                skills in various technologies including HTML, CSS, JavaScript,
+                Node.js, C++, Python, Figma, MySQL, and Git/GitHub. I am
+                actively seeking a software engineering position where I can
+                continue sharpening my skills, contribute to impactful projects,
+                and grow alongside the company for mutual benefit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="projects">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="popup-body">
+            <div class="skill-list">
+              <h1>Skills</h1>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Figma</li>
+                <li>Git/Github</li>
+              </ul>
+            </div>
+
+            <div class="project-container">
+              <h1>Projects</h1>
+              <div class="all-projects">
+                <div class="project-box">
+                  <img src="asessts/todolist.png" alt="Todo-List" />
+                  <div class="overlay">
+                    <h3>Todo-List</h3>
+                    <button class="more-btn">
+                      <a href="https://hy-aurora.github.io/Todo-list/">
+                        <span>Learn More</span>
+                      </a>
+                    </button>
                   </div>
-                  <div class="popup-body contact-container">
-                    <h1>Contact</h1>
-                    <p>Hi there, you can contact with me via email.</p>
-                    <form>
-                      <label for="name">Name</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Your name.." />
-          
-                      <label for="email">Email</label>
-                      <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        placeholder="Your mail.." />
-          
-                      <label for="subject">Subject</label>
-                      <textarea
-                        id="subject"
-                        name="subject"
-                        placeholder="Write something.."
-                        style="height: 200px"></textarea>
-          
-                      <button class="submit-btn more-btn" type="submit">
-                        <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
-                      </button>
-                    </form>
+                </div>
+
+                <div class="project-box">
+                  <img src="asessts/life.png" alt="Life.com" />
+                  <div class="overlay">
+                    <h3>Life.com</h3>
+                    <button class="more-btn">
+                      <a href="https://hy-aurora.github.io/Life.com/">
+                        <span>Learn More</span>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-box">
+                  <img src="asessts/github.png" alt="github" />
+                  <div class="overlay">
+                    <h3>GitHub</h3>
+                    <button class="more-btn">
+                      <a href="https://github.com/hy-aurora">
+                        <span>Learn More</span>
+                      </a>
+                    </button>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="socials">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-body testimonial-container socials-container">
+            <h1>Socials</h1>
+            <div class="socials">
+              <div class="socials-item">
+                <a
+                  href="https://www.linkedin.com/in/geturownvibez/"
+                  class="socials-item-icon socials-item-icon__linkedin"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="socials-item">
+                <a
+                  href="#"
+                  class="socials-item-icon socials-item-icon__twitter"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="socials-item">
+                <a
+                  href="https://github.com/hy-aurora"
+                  class="socials-item-icon socials-item-icon__github"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="contact">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-body contact-container">
+            <h1>Contact</h1>
+            <p>Hi there, you can contact with me via email.</p>
+            <form id="contact-form" onsubmit="openEmailApp(event)">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your mail.."
+                required
+              />
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <button class="submit-btn more-btn" type="submit">
+                <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      function openEmailApp(event) {
+        event.preventDefault(); // Prevent form from actually submitting
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+
+        const mailtoLink = `mailto:omishasingh201@gmail.com?subject=Contact from ${encodeURIComponent(
+          name
+        )}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(
+          email
+        )}%0AMessage: ${encodeURIComponent(subject)}`;
+
+        window.location.href = mailtoLink;
+      }
+    </script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+  </body>
 </html>
